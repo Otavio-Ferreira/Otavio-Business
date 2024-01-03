@@ -1,0 +1,62 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/banner.png');
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  background-position: center center;
+}
+
+.div-img{
+  background-color: rgb(0 0 0 / 50%);
+  backdrop-filter: blur(5px);
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  animation: bounceIn;
+  animation-duration: 1s;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: bold;
+  animation: bounceIn;
+  animation-duration: 1s;
+}
+
+.div-img img{
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.div-btn-link{
+  width: 100%;
+  height: 80px;
+  animation: bounceInDown;
+  animation-duration: 1s;
+}
+
+.btn-link{
+  width: 600px;
+  padding: 15px !important;
+  background-color: rgb(000 000 000 / 80%) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.btn-link:hover{
+  transform: scale(1.05);
+  transition: .6s;
+}
+
+@media(max-width: 620px){
+  .btn-link{
+    width: 360px;
+  } 
+}
